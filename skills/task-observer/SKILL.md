@@ -101,14 +101,9 @@ skill" (some upload paths keep only `SKILL.md`); its episodes do not run.
 
 ## Session Start Protocol
 
-Copy the seven items below into your first reply as `- [ ]` lines and tick
-each as it runs — an unticked item is reported, never assumed; the `- [ ]`
-items under How to Log are ticked the same way in the turn that writes.
-The scan also writes items 1, 2, 3, 6 and 7 with their outcomes to
-`skill-observations/session-starts.log`: in a run nobody reads, that line
-is the checklist's record, and items 4–5 go in the run's report.
+Run the seven checks below internally. Report only items that fail; do not copy the checklist into the reply. Record items 1, 2, 3, 6 and 7 and their outcomes in `skill-observations/session-starts.log`; items 4–5 go in the run's report.
 
-- [ ] **1. Storage.** The existence check for `skill-observations/` is also
+- **1. Storage.** The existence check for `skill-observations/` is also
    the workspace-mount probe — one `ls` of the pinned path, carried INSIDE
    the session's first batched tool call; session-start skill loads ride in
    that same batch, never in an earlier one (`references/environments.md`,
@@ -160,7 +155,7 @@ is the checklist's record, and items 4–5 go in the run's report.
    fetched — and list the skill's own directory with its `references/` and
    `scripts/`: a file the core names that is absent is reported in the same
    lines ("Reference files"), not at its first load.
-- [ ] **2. Scan.** Read only the frontmatter of each file in `observation-log/`
+- **2. Scan.** Read only the frontmatter of each file in `observation-log/`
    — never the bodies — and build awareness from `status`, `skill`,
    `proposes_skill` and `title` (the scan prints them, one line per entry;
    the full headers are in `skill-observations/last-scan-headers.txt` for a
@@ -208,7 +203,7 @@ is the checklist's record, and items 4–5 go in the run's report.
    **Only the print can be refused, so it runs last** — a refused print is
    never an empty log: load `references/observation-scan.md` ("A refused
    print is not an empty log") before moving either half.
-- [ ] **3. Review trigger.** Read `skill-observations/last-review-date.txt`. The
+- **3. Review trigger.** Read `skill-observations/last-review-date.txt`. The
    value carries the truth: a date = when the last review (full or a slice)
    reached a deliberate outcome — one that changed no status writes
    `last-triage-attempt.txt` instead; `never` = none yet; a missing file
@@ -239,7 +234,7 @@ is the checklist's record, and items 4–5 go in the run's report.
    `references/weekly-review.md` and runs the review unprompted; a session
    whose output a caller owns does neither: `references/environments.md`
    ("Sessions whose output channel is owned by a caller").
-- [ ] **4. Activation.** Once per session: if no CLAUDE.md (or equivalent)
+- **4. Activation.** Once per session: if no CLAUDE.md (or equivalent)
    activation instruction for this skill exists, suggest adding one
    (`references/environments.md`); after a scan `GAP:` line, open with the
    gap and the missing instruction, plainly. A block whose stamp (its first
@@ -247,10 +242,10 @@ is the checklist's record, and items 4–5 go in the run's report.
    reported in one line with how it differs, the current block offered whole — never
    written unasked. Run only once the skill is invoked, this step cannot
    detect a never-activated install; outside checks: that reference.
-- [ ] **5. Concurrency.** No shared log file to guard: each observation is its
+- **5. Concurrency.** No shared log file to guard: each observation is its
    own file; re-read one before changing its *status* (How to Log). Parallel
    sessions on one skill log the same findings: a fan-out expects restatements.
-- [ ] **6. Targets and staged work.** Resolve each distinct `skill:` value in
+- **6. Targets and staged work.** Resolve each distinct `skill:` value in
    the scanned frontmatter against the installed skill set and mention, in
    one line, any that no longer resolve — and any that resolve but cannot
    run, because presence in a listing is not capability
@@ -270,7 +265,7 @@ is the checklist's record, and items 4–5 go in the run's report.
    and name every directory no manifest entry covers. The cases are in
    `references/weekly-review.md` ("Staged-work reconciliation gate") — load
    it before judging any entry. Then say "N staged updates awaiting review".
-- [ ] **7. First run, or a named past session.** If the log is empty and the
+- **7. First run, or a named past session.** If the log is empty and the
    project has history (handover or decision docs, commit history, a notes
    or memory directory, an existing CLAUDE.md), offer a one-off backfill
    pass over those artefacts; when the user names a finished session, run
