@@ -15,18 +15,18 @@ A listing is not a security review: read a skill before you install it. This pag
 
 | Skill | What it does | Licence | Last skill update |
 |---|---|---|---|
-| [ai-visibility-tracking-strategy-builder](https://github.com/rebelytics/ai-visibility-tracking-strategy-builder) | Builds and refines the prompt set and reporting structure for tracking how a brand appears in AI answers. | CC BY 4.0 | 2026-10 |
+| [ai-visibility-tracking-strategy-builder](https://github.com/rebelytics/ai-visibility-tracking-strategy-builder) | Builds and refines the prompt set and reporting structure for tracking how a brand appears in AI answers. | CC BY 4.0 | 2026-11 |
 | [bing-grounding-query-analysis](https://github.com/rebelytics/bing-grounding-query-analysis) | Turns an exported Bing Webmaster Tools grounding-query report into decisions: coverage and concentration first, then branded vs non-branded citations, entity confusion and six more cuts. | CC BY 4.0 | 2026-11 |
 | [bing-wmt-ai-grounding-export](https://github.com/rebelytics/bing-wmt-ai-grounding-export) | Exports Bing Webmaster Tools AI Performance data (cited pages and their grounding queries) at scale through the report's own API. | CC BY 4.0 | 2026-11 |
-| [peec-ai-tracking-strategy-builder](https://github.com/rebelytics/peec-ai-tracking-strategy-builder) | Peec AI companion to the tracking strategy builder: project setup, writes and analysis in Peec AI. | CC BY 4.0 | 2026-10 |
-| [searchviu-tracking-strategy-builder](https://github.com/rebelytics/searchviu-tracking-strategy-builder) | searchVIU companion to the tracking strategy builder: prompt sets, field mapping, validation and CSV handover. | CC BY 4.0 | 2026-10 |
-| [sistrix-tracking-strategy-builder](https://github.com/rebelytics/sistrix-tracking-strategy-builder) | SISTRIX companion to the tracking strategy builder: AI tracker tags, CSV imports and update quotas. | CC BY 4.0 | 2026-10 |
+| [peec-ai-tracking-strategy-builder](https://github.com/rebelytics/peec-ai-tracking-strategy-builder) | Peec AI companion to the tracking strategy builder: project setup, writes and analysis in Peec AI. | CC BY 4.0 | 2026-11 |
+| [searchviu-tracking-strategy-builder](https://github.com/rebelytics/searchviu-tracking-strategy-builder) | searchVIU companion to the tracking strategy builder: prompt sets, field mapping, validation and CSV handover. | CC BY 4.0 | 2026-11 |
+| [sistrix-tracking-strategy-builder](https://github.com/rebelytics/sistrix-tracking-strategy-builder) | SISTRIX companion to the tracking strategy builder: AI tracker tags, CSV imports and update quotas. | CC BY 4.0 | 2026-11 |
 
 ## Tool companions (MCP servers)
 
 | Skill | What it does | Licence | Last skill update |
 |---|---|---|---|
-| [peec-ai-mcp](https://github.com/rebelytics/peec-ai-mcp) | Companion skill for the Peec AI MCP server: reports, competitive analysis and reading Peec metrics correctly. | CC BY 4.0 | 2026-10 |
+| [peec-ai-mcp](https://github.com/rebelytics/peec-ai-mcp) | Companion skill for the Peec AI MCP server: reports, competitive analysis and reading Peec metrics correctly. | CC BY 4.0 | 2026-11 |
 | [screaming-frog-mcp](https://github.com/rebelytics/screaming-frog-mcp) | Companion skill for the Screaming Frog SEO Spider MCP server: querying a crawl without flooding the context, response shapes and cost traps. | CC BY 4.0 | 2026-11 |
 | [searchviu-mcp](https://github.com/rebelytics/searchviu-mcp) | Companion skill for the searchVIU MCP server: querying crawl reports, date filters, row caps and API passthrough. | CC BY 4.0 | 2026-11 |
 | [sistrix-mcp](https://github.com/rebelytics/sistrix-mcp) | Companion skill for the SISTRIX MCP server: visibility, keyword, backlink and AI visibility data. | CC BY 4.0 | 2026-11 |
@@ -35,8 +35,10 @@ A listing is not a security review: read a skill before you install it. This pag
 
 | Skill | What it does | Licence | Last skill update |
 |---|---|---|---|
+| [international-llms-txt-build](https://github.com/rebelytics/international-llms-txt-build) | Builds international and multilingual llms.txt structures for websites with multiple country or language versions. | CC BY 4.0 | 2026-11 |
 | [pagination-independence-architecture](https://github.com/rebelytics/pagination-independence-architecture) | Designs category and listing architecture so a site's indexable value does not depend on paginated pages. | CC BY 4.0 | 2026-11 |
 | [redirect-verification](https://github.com/rebelytics/redirect-verification) | Checks a reported redirect or link fix against its spec, using crawl data and targeted live requests. | CC BY 4.0 | 2026-11 |
+| [schema-implementation](https://github.com/rebelytics/schema-implementation) | Implements schema.org structured data across a website, from page type analysis through developer-ready tickets to post-deployment verification. | CC BY 4.0 | 2026-11 |
 | [title-meta-gap-fill](https://github.com/rebelytics/title-meta-gap-fill) | Completes title tags and meta descriptions across a large page set without rewriting what already works. | CC BY 4.0 | 2026-11 |
 | [translation-audit](https://github.com/rebelytics/translation-audit) | Audits translated titles, headings, descriptions and body content across the language versions of a website. | CC BY 4.0 | 2026-11 |
 
@@ -46,7 +48,7 @@ A listing is not a security review: read a skill before you install it. This pag
 
 Open a pull request that adds a row for your skill in the right category, in alphabetical order.
 
-The criterion is that the skill is maintained with Task Observer. We judge that from the skill's content: it follows Task Observer's [skill-authoring guidelines](references/skill-authoring.md). If your skill diverges from them on purpose because you adjusted the guidelines in your own copy of Task Observer, say so in the pull request.
+The criterion is that the skill is maintained with Task Observer. We judge that from the skill's content: it follows Task Observer's [skill-authoring guidelines](skills/task-observer/references/skill-authoring.md). If your skill diverges from them on purpose because you adjusted the guidelines in your own copy of Task Observer, say so in the pull request.
 
 Requirements:
 
